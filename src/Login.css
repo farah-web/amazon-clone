@@ -1,0 +1,97 @@
+html{
+    font-size: 62.5%;
+}
+    :root{
+    --whiteColor:#fff;
+    --blackColor:#000;
+    --orangeColor:#FA9A05;
+    --greyColor:rgb(234,237,237);
+    }
+.login{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--whiteColor);
+}
+
+.login-logo{
+    margin:2rem auto 2rem auto;
+    width:16rem;
+    object-fit: contain;
+}
+.login-container{
+    width:30rem;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border:0.1rem solid var(--greyColor);
+    border-radius: 0.5rem;
+}
+.login-container > h1{
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.login-container > form > h5{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.login-container  > p{
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.login-container > form > input{
+    height: 3rem;
+    margin-bottom: 1rem;
+    background-color: var(--whiteColor);
+    width: 98%;
+    border:0.1rem solid #cacaca;
+ }
+.login-container > form > input:focus{
+    outline:none;
+    border:0.1rem solid #cacaca;
+ }
+
+.login-signInButton{
+    width: 100%;
+    margin-top: 1rem;
+    padding:0.8rem 5rem;
+    color: var(--blackColor);
+    border:0.1rem solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-image: linear-gradient(#fdecc0, var(--orangeColor));
+    transition: 0.5s ease-in;
+}
+
+.login-signInButton:hover{
+    background-image: linear-gradient(#fce4a9, var(--orangeColor));
+}
+
+.login-registerButton{
+    width: 100%;
+    margin-top: 1rem;
+    padding:0.8rem 5rem;
+    color: var(--blackColor);
+    border:0.1rem solid;
+    border-color: #cacaca #999999 #6d6d6d;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-image: linear-gradient(#cacaca, var(--greyColor));
+    transition: 0.5s ease-in;
+}
+
+.login-registerButton:hover{
+    background-image: linear-gradient(#bbbbbb, var(--greyColor));
+}

@@ -1,0 +1,18 @@
+html{
+    font-size: 62.5%;
+}
+    :root{
+        --whiteColor:#fff;
+        --blackColor:#000;
+        --orangeColor:#FA9A05;
+        --greyColor:rgb(234,237,237);
+}
+
+    .orders {
+        /* padding: 20px 80px; */
+        padding: 20px;
+}
+    
+    .orders > h1 {
+        margin: 30px 0;
+}    

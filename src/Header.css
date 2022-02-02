@@ -1,0 +1,153 @@
+html{
+    font-size: 62.5%;
+}
+    :root{
+        --whiteColor:#fff;
+        --blackColor:#000;
+        --orangeColor:#FA9A05;
+        --greyColor:rgb(234,237,237);
+    }
+
+.header{
+    height: 6rem;
+    display:flex;
+    align-items: center;
+    background-color:var(--blackColor);
+    position:sticky;
+    z-index: 100;
+    top:0;
+    
+}
+.header-logo{
+width:auto;
+height:6rem;
+margin:0 2rem;
+object-fit: cover;
+}
+
+.header-searchIcon{
+    background-image: linear-gradient(#fdecc0, var(--orangeColor));
+    padding:0.5rem;
+    height:2.2rem;
+    color:var(--blackColor);
+    cursor: pointer;
+    margin-right:2rem;
+    transition: 0.5s ease-in;
+}
+
+.header-searchIcon:hover{
+    background-image: linear-gradient(#fce4a9, var(--orangeColor));
+}
+
+.header-search{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 2.4rem;
+    }
+
+    .header-searchInput{
+        width: 100%;
+        height:0.5rem;
+        border:none;
+        padding: 1rem;
+        outline: none;
+    }
+    .header-nav{
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 2rem;
+    }
+    .header-option{
+        display:flex;
+        flex-direction: column;
+        margin:0 1rem;
+        color:var(--whiteColor);
+    }
+
+    .header-optionLineOne{
+        font-size: 1rem;
+    }
+    .header-optionLineTwo{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .header-optionBasket{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        color:var(--whiteColor);
+    }
+   
+    .header-basketCount{
+        margin: 0 1rem;
+    }
+
+    @media only screen and (max-width: 400px)
+    {
+        .header{
+            display:grid;
+            grid-template-columns: 1fr 3fr;
+        }
+
+        .header-logo{
+            width:80%;
+            height:auto;
+            margin-left:5px;
+        }
+           
+        .header-search, .yourPrime{
+            display: none;
+        }
+        
+        .header-nav{
+            display: flex;
+            justify-content: space-between;
+            margin-left:0.3rem;
+        }
+            
+       .header-option{
+            margin:0;
+        }
+
+        .header-basketCount{
+             margin: 0;
+        }
+    }
+
+
+
+    @media only screen and (min-width:400px) and (max-width: 600px)
+    {
+        .header{
+            display:grid;
+            grid-template-columns: 1fr 3fr;
+        }
+
+        .header-logo{
+            width:95%;
+            height:auto;
+            margin-left:5px;
+           
+        }
+           
+        .header-search, .yourPrime{
+            display: none;
+        }
+
+        .header-nav{
+            display: flex;
+            justify-content: space-evenly;
+            margin-left:0.3rem;
+        }
+            
+       .header-option{
+            margin:0;
+        }
+
+        .header-basketCount{
+             margin: 0;
+        }
+    }

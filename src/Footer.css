@@ -1,0 +1,195 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+    :root{
+        --whiteColor:#fff;
+        --blackColor:#000;
+        --orangeColor:#FA9A05;
+        --greyColor:rgb(234,237,237);
+        --footerGreyBottom:rgb(9, 12, 15);
+        --footerGreyLinks:rgb(35,47,62);
+        --footerGreyDark:rgb(19,26,34);
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     }
+
+    .footer-bottom{
+        display: grid;
+        place-items: center;
+        height:4rem;
+        background-color: var(--footerGreyBottom);
+        color:var(--whiteColor);
+        font-size: 1.2rem;
+    }
+
+    .footer-nav{
+     width:100%;
+     background-color: var(--footerGreyLinks);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+
+   .footer-navContainer{
+    width:150rem;
+    height: 15rem;
+    background-color: var(--footerGreyLinks);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color:var(--whiteColor);
+    padding-top:2rem;
+    padding-bottom: 2rem;
+   }
+
+.footer-subNav{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch; 
+    align-items: center;
+    }
+
+.footer-subNavTitle{
+    font-size: 1.5rem !important;
+    font-weight: bold;
+    line-height: 2.2rem;
+    color: white !important;
+}
+
+.footer-subNavLinks li{
+list-style: none;
+font-size: 1.3rem;
+font-weight: bold;
+line-height: 2.2rem;
+
+}
+
+.footer-subNavLinks a{
+text-decoration: none;
+color: rgb(187, 187, 187);
+/* text-align: left; */
+}
+
+
+.footer-subNavLinks a:hover{
+      color: rgb(238, 238, 238);
+    }
+
+   .footer-navDark{
+        width:100%;
+        background-color: var(--footerGreyDark);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+   
+      .footer-navContainerDark{
+       width:120rem;
+       height: 8rem;
+       background-color: var(--footerGreyDark);
+       display: grid;
+       grid-template-columns: repeat(5, 1fr);
+       color:var(--whiteColor);
+       padding-top:2rem;
+       padding-bottom: 2rem;
+      }
+   
+   .footer-subNavDark{
+       display: flex;
+       flex-direction: column;
+       justify-content: stretch; 
+       align-items: center;
+       }
+   
+   .footer-subNavTitleDark{
+       font-size: 1.2rem !important;
+       line-height: 2rem;
+       text-align: left;
+       color: white !important;
+   }
+   
+   .footer-subNavLinksDark li{
+   list-style: none;
+   font-size: 1rem;
+   line-height: 2rem;
+   
+   }
+   
+   .footer-subNavLinksDark a{
+   text-decoration: none;
+   color: rgb(187, 187, 187);
+   /* text-align: left; */
+   }
+   
+   
+   .footer-subNavLinksDark a:hover{
+         color: rgb(238, 238, 238);
+    }
+
+    
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+{
+          .footer-navContainer{
+           grid-template-columns:1fr;
+           height:max-content;
+           }
+
+           .footer-subNavLinks li{
+               text-align: center;
+           }
+
+           .footer-subNavLinksDark li{
+               text-align: center;
+           }
+           .footer-navContainerDark{
+            grid-template-columns:1fr;
+            height:max-content;
+           }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 992px)
+{
+    .footer-navContainer{
+        grid-template-columns: repeat(2, 1fr);
+        height:max-content;
+    }
+
+    .footer-navContainerDark{
+        grid-template-columns: repeat(5, 1fr);
+        height:max-content;
+    }
+    .footer-subNavLinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    
+    }
+    .footer-subNav{
+        display: block;
+        padding-left:8rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+{
+    .footer-navContainer{
+        grid-template-columns: repeat(4, 1fr);
+        height:max-content;
+    }
+
+    .footer-navContainerDark{
+        grid-template-columns: repeat(5, 1fr);
+        height:max-content;
+    }
+}
+

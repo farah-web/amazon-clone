@@ -1,0 +1,109 @@
+html{
+    font-size: 62.5%;
+}
+    :root{
+        --whiteColor:#fff;
+        --blackColor:#000;
+        --orangeColor:#FA9A05;
+        --greyColor:rgb(234,237,237);
+    }
+
+.checkout{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap:3rem;
+    justify-content: space-around;
+    background-color: var(--greyColor);
+    padding: 2rem;
+    height: max-content;
+}
+.checkout-ad{
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+.checkout-left, .checkout-right{
+   background-color: var(--whiteColor);
+}
+.checkout-left{
+   padding-left: 2rem;
+   padding-top: 2rem;
+}
+
+    .checkout-img{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .checkout-title{
+        margin-right: 1rem;
+        padding: 1rem;
+        border-bottom: 1px solid var(--greyColor);
+        font-size: 3rem;
+    }
+    .checkout-name{
+        font-size: 1.5rem !important;
+    }
+
+@media only screen and (max-width: 400px)
+{
+    .checkout{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:3rem;
+        justify-content: center;
+        background-color: var(--greyColor);
+        padding:2rem;
+        height: max-content;
+    }
+
+    .checkout-ad{
+     display: none;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width:400px) and (max-width: 600px)
+{
+
+    .checkout{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:3rem;
+        justify-content: center;
+        background-color: var(--greyColor);
+        padding:2rem;
+        height: max-content;
+    }
+
+    .checkout-ad{
+     display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and  (max-width: 768px)
+{
+    .checkout{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:3rem;
+        justify-content: center;
+        background-color: var(--greyColor);
+        padding:2rem;
+        height: max-content;
+    }
+
+    .checkout-ad{
+        display: none;
+       }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)and (max-width: 992px)
+{
+    .checkout-ad{
+        display: block;
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+}

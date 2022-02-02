@@ -1,0 +1,134 @@
+html{
+    font-size: 62.5%;
+}
+    :root{
+        --whiteColor:#fff;
+        --blackColor:#000;
+        --orangeColor:#FA9A05;
+        --greyColor:rgb(234,237,237);
+    }
+.payment{
+   background-color: var(--whiteColor); 
+}
+
+.payment-container > h1{
+text-align: center;
+padding: 1rem;
+font-weight: 400;
+background-color: var(--greyColor);
+border-bottom: 1px solid var(--greyColor);
+}
+
+.payment-container > h1 a{
+text-decoration: none;
+}
+
+.payment-section{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin:0 2rem;
+    padding: 2rem;
+    border-bottom: 1px solid var(--greyColor);
+}
+.payment-title{
+   width:40%;
+   font-size: 1.6rem;
+  }
+
+.payment-address, .payment-details {
+    width:80%;
+    font-size: 1.4rem;
+}
+
+.payment-details > form{
+    max-width:40rem;
+}
+
+.payment-details > h4{
+    padding-bottom:2rem;
+}
+.payment-priceContainer > h3{
+    margin: 1rem;
+    font-weight: 700;
+}
+
+.payment-cardButton{
+    margin-top: 1rem;
+    padding:0.6rem 16rem;
+    color: var(--blackColor);
+    border:0.1rem solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-image: linear-gradient(#fdecc0, var(--orangeColor));
+    transition: 0.5s ease-in;
+}
+
+.payment-cardButton:hover{
+    background-image: linear-gradient(#fce4a9, var(--orangeColor));
+}
+
+
+@media only screen and (max-width: 400px)
+{
+    .payment-section{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .payment-title{
+        text-align: center;
+        width:100%;
+     }
+     
+     .payment-address, .payment-details {
+        text-align: center;
+         width:100%;
+         font-size: 1.4rem;
+     }
+
+    .payment-details > form{
+        margin-top: 2rem;
+        text-align: center;
+     }
+
+    .payment-cardButton{
+        padding:0.6rem 12rem;
+        font-size: 1.2rem;
+     }
+}
+
+@media only screen and (min-width:400px) and (max-width: 600px)
+{
+    .payment-section{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .payment-title{
+        text-align: center;
+        width:100%;
+     }
+     
+     .payment-address, .payment-details {
+        text-align: center;
+         width:100%;
+         font-size: 1.4rem;
+     }
+
+    .payment-details > form{
+        margin-top: 2rem;
+        text-align: center;
+     }
+
+    .payment-cardButton{
+        padding:0.6rem 12rem;
+        font-size: 1.2rem;
+     }
+}
